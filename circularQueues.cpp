@@ -26,7 +26,7 @@ public:
         //cek apakah antrian kosong
         if (FRONT == -1){
             FRONT = 0;
-            FRONT = 0;
+            REAR = 0;
         }
         else{
             //jika REAR berada di posisi terakhir array , kembali ke awal array
@@ -48,7 +48,7 @@ public:
         //cek jika antrian hanya memiliki satu element 
         if (FRONT == REAR) {
             FRONT = -1;
-            FRONT = -1;
+            REAR = -1;
         }
         else{
             //jika element yang dihapus berada di posisi terakhir array,kembali
@@ -109,7 +109,7 @@ int main(){
             cout << "2. Implement delete operation" << endl;
             cout << "3. Display values" << endl;
             cout << "4. Exit" << endl;
-            cout << "5. Enter your choice (1-4): ";
+            cout << "Enter your choice (1-4): ";
             cin >> ch;
             cout << endl;
 
